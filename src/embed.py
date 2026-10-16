@@ -28,7 +28,10 @@ def main():
     ap.add_argument("--dtype", default="bfloat16", help="float16 to mimic Kaggle T4 (no bf16)")
     ap.add_argument("--max_layers", type=int, default=0,
                     help="keep only the first N transformer layers (fits bigger models in 8GB); skips log-prob stats")
+    ap.add_argument("--pool_layers", default="",
+                    help="e.g. 4,8,20: also save mean/max/std/first-8/last-8 token pooling for these layers")
     args = ap.parse_args()
+    pool_layers = [int(x) for x in args.pool_layers.split(",") if x]
     tag = args.tag or args.model.split("/")[-1]
 
     df = pd.read_csv(args.csv)
@@ -48,7 +51,7 @@ def main():
 
     # Sort by length so batches pad little; restore order at the end.
     order = np.argsort(df.text.str.len().values)
-    hidden, lp = [None] * len(df), [None] * len(df)
+    hidden, lp, pools = [None] * len(df), [None] * len(df), [None] * len(df)
     t0 = time.time()
     for s in range(0, len(df), args.bs):
         ix = order[s:s + args.bs]
@@ -57,6 +60,12 @@ def main():
         mask = enc.attention_mask.unsqueeze(-1).float()
         hs = torch.stack(out.hidden_states, 1).float()  # [B, L+1, T, D]
         pooled = (hs * mask.unsqueeze(1)).sum(2) / mask.sum(1).unsqueeze(1)
+        if pool_layers:
+            for j, i in enumerate(ix):
+                n = int(enc.attention_mask[j].sum())
+                h = hs[j, pool_layers, :n]  # [nL, n, D]
+                pools[i] = torch.stack([h.mean(1), h.max(1).values, h.std(1),
+                                        h[:, :8].mean(1), h[:, -8:].mean(1)], 1).half().cpu().numpy()
         if args.max_layers:
             for j, i in enumerate(ix):
                 hidden[i] = pooled[j].half().cpu().numpy()
@@ -81,7 +90,8 @@ def main():
     out_dir = ROOT / "feats"
     out_dir.mkdir(exist_ok=True)
     path = out_dir / f"{tag}_{Path(args.csv).stem}.npz"
-    np.savez(path, hidden=np.stack(hidden), lp=np.stack(lp), ids=df.id.values)
+    extra = {"pools": np.stack(pools), "pool_layers": np.array(pool_layers)} if pool_layers else {}
+    np.savez(path, hidden=np.stack(hidden), lp=np.stack(lp), ids=df.id.values, **extra)
     print(f"saved {path} hidden={np.stack(hidden).shape} in {time.time()-t0:.0f}s")
 
 

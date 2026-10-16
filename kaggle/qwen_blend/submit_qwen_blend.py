@@ -1,6 +1,9 @@
 # Name That LLM: blend of TF-IDF LR + linear probes on frozen Qwen3 Base hidden states.
 # Local prompt-grouped 5-fold CV: tfidf 0.338, qwen0.6b[4,20] 0.393, qwen4b[4,8,20] 0.436, blend 0.458.
-# v1 (LB pending) used 0.6b + 1.7b[4,16], CV 0.440.
+# v1: 0.6b + 1.7b[4,16], CV 0.440, LB 0.427. v2: this blend, LB 0.429.
+# v3: + prompt-group assignment. Every train prompt is answered once by each model, so cluster test
+#     passages by topic and assign models within each cluster (each model at most ceil(n/18) times).
+#     OOF simulation: 0.458 -> 0.660 (0.590 with 0-7 models missing per prompt).
 import glob
 import os
 from pathlib import Path
@@ -9,10 +12,12 @@ import numpy as np
 import pandas as pd
 import torch
 from scipy.sparse import hstack
+from scipy.optimize import linear_sum_assignment
+from sklearn.cluster import AgglomerativeClustering
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.linear_model import LogisticRegression
 from sklearn.pipeline import make_pipeline
-from sklearn.preprocessing import StandardScaler
+from sklearn.preprocessing import StandardScaler, normalize
 from transformers import AutoModel, AutoModelForCausalLM, AutoTokenizer
 
 D = Path(os.environ.get("NTL_DATA", "/kaggle/input/competitions/name-that-llm"))
@@ -102,6 +107,29 @@ for slug, hf_id, layers, w, max_layers, dtype in QWEN:
     assert list(clf.classes_) == labels
     blend += w * np.log(np.clip(clf.predict_proba(F[len(train):]), 1e-6, 1))
 
-sub = pd.DataFrame({"id": test["id"], "model": np.array(labels)[blend.argmax(1)]})
+
+
+def prompt_assign(lp, texts, threshold=0.9):
+    """Cluster passages by topic (≈ prompt), then assign models within each cluster."""
+    X = normalize(TfidfVectorizer(stop_words="english", sublinear_tf=True, min_df=2).fit_transform(texts)).toarray()
+    clusters = AgglomerativeClustering(n_clusters=None, distance_threshold=threshold, metric="cosine",
+                                       linkage="average").fit_predict(X)
+    K = lp.shape[1]
+    pred = lp.argmax(1)
+    for c in np.unique(clusters):
+        idx = np.where(clusters == c)[0]
+        cap = int(np.ceil(len(idx) / K))  # a merged cluster may hold several prompts
+        r, col = linear_sum_assignment(-np.tile(lp[idx], (1, cap)))
+        pred[idx[r]] = col % K
+    sizes = pd.Series(clusters).value_counts()
+    print(f"prompt clusters: {len(sizes)}, median size {sizes.median():.0f}, max {sizes.max()}", flush=True)
+    return pred
+
+
+pred = blend.argmax(1)
+if len(test) >= 100:  # interactive run has only a few example rows; nothing to cluster
+    pred = prompt_assign(blend, test.text.tolist())
+    print(f"assignment changed {np.mean(pred != blend.argmax(1)):.1%} of predictions", flush=True)
+sub = pd.DataFrame({"id": test["id"], "model": np.array(labels)[pred]})
 sub.to_parquet("submission.parquet", index=False)
 print(sub.shape, sub.model.value_counts().head())
