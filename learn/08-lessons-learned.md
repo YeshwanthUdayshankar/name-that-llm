@@ -1,8 +1,9 @@
 # 8. Lessons learned (as of 2026-10-16)
 
-1. **Look at how the data was made before modelling.** "Every prompt answered once by every model" was
-   visible with a three-line groupby and is worth more (simulated +0.20) than all our feature work combined
-   (+0.12).
+1. **Look at how the data was made — and don't assume the test set was made the same way.** "Every prompt
+   answered once by every model" held in train and simulated at +0.20, but the test set has only ~2–5 models
+   per prompt, so it gave +0.01. Simulate the trick under the test set's *stated* differences (unequal
+   per-model counts) before expecting the full gain.
 2. **Validate the way the test set differs from train.** Test prompts are unseen, so split by prompt. That
    local score has tracked the leaderboard within ~0.02.
 3. **With little data, freeze the big model and train a small head.** Frozen Qwen3 + logistic regression

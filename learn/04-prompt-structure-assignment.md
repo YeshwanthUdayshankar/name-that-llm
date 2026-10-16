@@ -44,7 +44,24 @@ Threshold 0.9 doesn't need the number of prompts, and stays good when groups are
 - **Untested on Kaggle before scoring.** The check run has only 3 rows, so the step is skipped there
   (`len(test) >= 100`). We tested it locally on a 400-row stand-in test file.
 
-## Ideas to push it further
+## What happened on the leaderboard
+v3 scored **0.439** vs v2's 0.429: +0.010, not +0.20. Re-running the simulation with only *k* models kept per
+prompt shows how fast the gain disappears:
+
+| models per prompt | argmax → assignment | gain |
+|---|---|---|
+| 18 | 0.458 → 0.660 | +0.202 |
+| 12 | 0.459 → 0.560 | +0.101 |
+| 8 | 0.464 → 0.516 | +0.053 |
+| 5 | 0.467 → 0.489 | +0.022 |
+| 3 | 0.488 → 0.505 | +0.018 |
+| 2 | 0.439 → 0.442 | +0.003 |
+
+A +0.01 gain fits a test set where each prompt was answered by only ~2–5 models (so ~1,000 test prompts),
+consistent with "per-model counts are unequal". The trick is real but small here; keep it (it doesn't hurt),
+and stop investing in it.
+
+## Ideas to push it further (low priority now)
 - Soft version: use cluster co-membership as a feature instead of hard assignment.
 - Iterate: assignment → retrain on confident test pseudo-labels → re-assign.
 - Use the per-model test counts implied by the LB? No — those aren't given, and probing them wastes submissions.

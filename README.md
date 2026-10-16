@@ -23,7 +23,7 @@ Competition data is in `data/` (gitignored — rules forbid redistribution).
 | blend tfidf .5 + 0.6B .1 + 4B .4 (v2) | 0.458 | public LB 0.429 |
 | hierarchical lab → model (`src/hier.py`) | 0.456 | no gain |
 | extra token pooling: max/std/first8/last8 (`src/pool_probe.py`) | ≤0.429 | worse than mean |
-| v2 + prompt-cluster assignment (v3) | 0.660 (sim.) | pending |
+| v2 + prompt-cluster assignment (v3) | 0.660 (sim.) | public LB 0.439 |
 
 ### Prompt-group assignment (v3)
 Every train prompt is answered exactly once by each of the 18 models. v3 clusters test passages by topic

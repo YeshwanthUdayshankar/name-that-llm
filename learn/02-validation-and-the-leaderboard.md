@@ -16,7 +16,7 @@ be blended.
 | TF-IDF + LinearSVC baseline | 0.334 | 0.350 |
 | v1: TF-IDF + Qwen3 0.6B + 1.7B blend | 0.440 | 0.427 |
 | v2: TF-IDF + Qwen3 0.6B + 4B blend | 0.458 | 0.429 |
-| v3: v2 + prompt-cluster assignment | 0.660 (simulated) | pending |
+| v3: v2 + prompt-cluster assignment | 0.660 (simulated, 18 models/prompt) | 0.439 |
 
 The direction is reliable; small differences are not. v2's +0.018 local gain over v1 showed up as +0.002.
 
