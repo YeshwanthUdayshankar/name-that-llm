@@ -33,3 +33,5 @@ On train OOF: 0.458 → 0.672 with true prompt groups, 0.660 with estimated clus
 0.590 when 0–7 models are randomly missing per prompt.
 
 Pipeline: `src/embed.py` (features) → `src/probe.py` (per-layer CV) → `src/blend.py` (OOF blend).
+
+Notes, findings and strategy: [learn/](learn/README.md).
