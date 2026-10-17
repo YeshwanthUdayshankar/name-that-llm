@@ -1,0 +1,581 @@
+# domain | topic (a noun phrase that reads after "Explain" / "describing" / "about"). Checked against the
+# 150 reconstructed train topics and the 30 pilot prompts. Used by build_prompts.py.
+physics | the Leidenfrost effect, where a water droplet skates across a very hot pan on a cushion of its own vapour
+physics | how a superfluid like helium-4 can creep up the walls of its container and flow without friction
+physics | the photoelectric effect and why it convinced Einstein that light comes in packets
+physics | how a rainbow forms inside raindrops and why each person sees their own rainbow
+physics | the Coriolis effect and why it steers hurricanes but not the water in your sink
+physics | how the Doppler effect lets astronomers tell whether a galaxy is moving toward or away from us
+physics | the twin paradox in special relativity and why the travelling twin comes home younger
+physics | how a neutrino can pass through a light-year of lead without stopping
+physics | the Higgs field and how it gives some particles their mass
+physics | why ice is slippery, a question physicists still debate
+physics | how a gyroscope resists being tipped over and keeps its orientation
+physics | the physics of a spinning top and the wobble called precession
+physics | quantum tunnelling and how it lets the Sun fuse hydrogen at temperatures that seem too low
+physics | why the night sky is dark, known as Olbers' paradox
+physics | the Meissner effect, which makes a superconductor levitate above a magnet
+physics | how a nuclear chain reaction works and what critical mass means
+physics | the Brazil nut effect, where shaking a jar of mixed nuts brings the largest ones to the top
+physics | how sound travels faster in water and steel than in air
+physics | the Pauli exclusion principle and why it keeps matter from collapsing
+physics | how a white dwarf is held up by electron degeneracy pressure
+physics | the Chandrasekhar limit and what happens to a star that exceeds it
+physics | gravitational lensing, where a galaxy cluster bends the light of objects behind it
+physics | how solar sails could push a spacecraft using nothing but sunlight
+physics | Schrödinger's cat and what the thought experiment says about quantum superposition
+physics | the double-slit experiment with single electrons
+physics | the Stern-Gerlach experiment and the discovery of quantum spin
+physics | how the Michelson-Morley experiment failed to find the luminiferous aether
+physics | the puzzle of why a bicycle stays upright when it is moving
+physics | how a magnetic compass works and why Earth's magnetic poles wander
+physics | geomagnetic reversals, when Earth's north and south magnetic poles swap
+physics | the Van Allen radiation belts that surround Earth
+physics | how a lightning bolt forms inside a thundercloud
+physics | ball lightning, the rare glowing spheres reported during storms
+physics | why bubbles in a glass of Guinness appear to sink
+physics | the physics of a perfect skipping stone
+physics | how cavitation bubbles collapse with enough force to damage ship propellers
+physics | sonoluminescence, where collapsing bubbles in water emit flashes of light
+physics | the Bose-Einstein condensate, a state of matter near absolute zero
+physics | why absolute zero can never quite be reached
+physics | how a refrigerator moves heat from a cold place to a warm one
+physics | Maxwell's demon and why it does not break the second law of thermodynamics
+physics | the arrow of time and why we remember the past but not the future
+physics | how a pendulum clock keeps time and why Huygens found two clocks synchronising
+physics | Foucault's pendulum and how it shows that Earth rotates
+physics | the Tacoma Narrows Bridge collapse and the physics of resonance
+physics | how noise-cancelling headphones use destructive interference
+physics | why the sea is blue and not simply reflecting the sky
+physics | total internal reflection and how optical fibres carry light around corners
+physics | the green flash sometimes seen at sunset
+physics | how mirages form over hot roads and deserts
+physics | the Fata Morgana mirage that makes ships appear to float above the horizon
+physics | why a spoon looks bent in a glass of water
+physics | how polarised sunglasses cut glare from water
+physics | the physics of how birds and planes stay aloft
+physics | the Magnus effect and how it makes a football curve
+physics | how a siphon works and the debate over whether air pressure or gravity drives it
+physics | terminal velocity and why a falling cat can survive a long drop
+physics | the escape velocity of Earth and what it takes to leave a planet
+physics | Lagrange points, where a spacecraft can park between two orbiting bodies
+physics | tidal locking and why we always see the same face of the Moon
+physics | how the Moon is slowly drifting away from Earth
+physics | the Roche limit and why Saturn's rings never formed into a moon
+physics | the rings of Saturn and how they may be younger than the dinosaurs
+physics | Jupiter's Great Red Spot, a storm larger than Earth that has raged for centuries
+physics | the diamond rain that may fall inside Neptune and Uranus
+physics | the hexagonal storm at Saturn's north pole
+physics | Venus's runaway greenhouse effect
+physics | Olympus Mons, the largest volcano in the solar system
+physics | the Oort cloud, a vast shell of icy bodies at the edge of the solar system
+physics | how comets grow their tails as they approach the Sun
+physics | Betelgeuse and what we will see when it explodes as a supernova
+physics | Type Ia supernovae and how they serve as standard candles
+physics | magnetars, neutron stars with the strongest magnetic fields in the universe
+physics | pulsars and how Jocelyn Bell Burnell first mistook their signal for aliens
+physics | the Wow! signal received in 1977
+physics | fast radio bursts and the mystery of their origin
+physics | the Big Bang nucleosynthesis that forged the first hydrogen and helium
+physics | how heavy elements like gold were forged in colliding neutron stars
+physics | the cosmic distance ladder astronomers use to measure the universe
+physics | the Hubble tension, the disagreement over how fast the universe is expanding
+physics | redshift and the discovery that the universe is expanding
+physics | the observable universe and why we can see farther than 13.8 billion light-years
+physics | cosmic rays and the Oh-My-God particle detected in 1991
+physics | antimatter and why the universe contains so little of it
+physics | the Large Hadron Collider and how it smashes protons together
+physics | the Standard Model of particle physics, told as a family of particles
+physics | quarks and why they can never be seen alone
+physics | the strong nuclear force and its strange property of growing stronger with distance
+physics | the weak nuclear force and radioactive beta decay
+physics | how carbon-14 dating works
+physics | half-life and the randomness of radioactive decay
+physics | the Oklo natural nuclear reactor that ran in Gabon two billion years ago
+physics | the Heisenberg uncertainty principle
+physics | the EPR paradox and Einstein's objection to quantum mechanics
+physics | Bell's theorem and the experiments that ruled out local hidden variables
+physics | quantum computers and how qubits differ from classical bits
+physics | quantum decoherence and why we do not see everyday objects in superposition
+physics | the many-worlds interpretation of quantum mechanics
+physics | the holographic principle, the idea that our universe's information may be stored on a boundary
+physics | string theory and its proposed extra dimensions
+physics | wormholes and whether they could allow travel across space
+physics | the Alcubierre warp drive and what it would require
+physics | time crystals, a phase of matter that repeats in time
+physics | metamaterials and the dream of an invisibility cloak
+physics | how a laser cooling trap slows atoms to a near standstill
+physics | atomic clocks and how they define the second
+physics | how GPS satellites must correct for both special and general relativity
+physics | the equivalence principle and Einstein's happiest thought about a falling man
+physics | frame dragging, where a rotating mass twists spacetime around it
+physics | the Kelvin-Helmholtz instability that paints wave-like patterns in clouds
+physics | turbulence, one of the great unsolved problems of classical physics
+physics | the butterfly effect and sensitive dependence on initial conditions
+physics | the physics of why a cup of coffee cools
+physics | how a microwave oven heats food
+physics | why a rubber band warms when stretched and cools when released
+physics | piezoelectricity and how squeezing a crystal makes electricity
+physics | triboelectric charging and why you get a shock from a doorknob
+physics | the Northern Hemisphere's jet stream and how it shapes weather
+physics | how a tornado forms from a rotating supercell thunderstorm
+physics | why the Dead Sea lets swimmers float effortlessly
+physics | the physics of tsunamis and why they are barely noticeable in deep ocean
+physics | rogue waves, once dismissed as sailors' myths
+biology | the axolotl's ability to regrow its limbs, heart and parts of its brain
+biology | how a caterpillar dissolves into soup inside its chrysalis before becoming a butterfly
+biology | the bombardier beetle's boiling chemical defence spray
+biology | how the mantis shrimp sees colours with sixteen kinds of photoreceptors
+biology | the mantis shrimp's punch, which moves fast enough to boil water
+biology | how electric eels generate shocks of hundreds of volts
+biology | echolocation in bats and how they hunt in total darkness
+biology | how dolphins sleep with one half of their brain at a time
+biology | the naked mole rat's resistance to cancer and pain
+biology | how the wood frog freezes solid in winter and thaws back to life
+biology | the honeybee waggle dance that tells nestmates where to find flowers
+biology | how ant colonies build living bridges out of their own bodies
+biology | leafcutter ants and their underground fungus farms
+biology | the zombie-ant fungus Ophiocordyceps that hijacks its host's behaviour
+biology | Toxoplasma gondii and how it makes infected rats lose their fear of cats
+biology | the lifecycle of the periodical cicada that emerges every 13 or 17 years
+biology | how monarch butterflies migrate thousands of miles across generations
+biology | the salmon's journey back to the exact stream where it was born
+biology | how sea turtles use Earth's magnetic field to find their nesting beaches
+biology | how migratory birds may sense magnetic fields through quantum effects in their eyes
+biology | the cleaner wrasse and its mutualistic relationship with larger fish
+biology | the clownfish's protective partnership with sea anemones
+biology | how the octopus changes colour and texture in an instant
+biology | the cuttlefish's hypnotic colour displays
+biology | the hagfish and its defensive cloud of slime
+biology | the Greenland shark, which can live for centuries
+biology | the bowhead whale's resistance to cancer despite its huge size, known as Peto's paradox
+biology | how a giraffe pumps blood up its long neck without fainting
+biology | the platypus, a venomous, egg-laying mammal that senses electric fields
+biology | horizontal gene transfer and how bacteria swap genes
+biology | antibiotic resistance and the evolutionary arms race with bacteria
+biology | bacteriophages, viruses that hunt bacteria
+biology | how vaccines teach the immune system to recognise a threat
+biology | the hygiene hypothesis and the rise of allergies
+biology | the gut microbiome and its surprising influence on mood
+biology | how the vagus nerve links the gut and the brain
+biology | the placebo effect and how belief can change the body
+biology | how a single fertilised egg becomes a body with trillions of specialised cells
+biology | Hox genes and the body plans they lay out in embryos
+biology | the Hayflick limit and why human cells stop dividing
+biology | telomeres and their role in ageing
+biology | apoptosis, the programmed death that sculpts our fingers in the womb
+biology | how red blood cells give up their nucleus to carry more oxygen
+biology | how the heart beats on its own without instructions from the brain
+biology | how the liver regenerates after part of it is removed
+biology | the blood-brain barrier and why it makes brain diseases hard to treat
+biology | the glymphatic system that clears waste from the brain during sleep
+biology | why we yawn, a question still not settled
+biology | how photosynthesis turns sunlight, water and air into sugar
+biology | C4 and CAM photosynthesis and how desert plants save water
+biology | how plants know which way is up
+biology | the Venus flytrap and how it counts touches before snapping shut
+biology | the corpse flower and its stench of rotting meat
+biology | how sunflowers track the Sun across the sky when young
+biology | how trees move water hundreds of feet upward without a pump
+biology | the bristlecone pines that have lived for nearly five thousand years
+biology | Pando, the aspen grove in Utah that is a single organism
+biology | the giant sequoia's dependence on fire to release its seeds
+biology | lichens, a partnership of fungus and alga that can survive in space
+biology | how coral reefs are built by tiny animals in partnership with algae
+biology | kelp forests and the sea otters that protect them
+biology | keystone species and what happens when one is removed
+biology | the Red Queen hypothesis of evolutionary arms races
+biology | sexual selection and the peacock's extravagant tail
+biology | the bowerbird's elaborate decorated courtship structures
+biology | the anglerfish-like lure of the alligator snapping turtle's tongue
+biology | Batesian mimicry, where harmless species copy dangerous ones
+biology | the orchid that mimics a female bee to trick males into pollinating it
+biology | the evolution of the whale from a four-legged land mammal
+biology | Tiktaalik and the transition of fish onto land
+biology | the Great Oxygenation Event and how cyanobacteria changed the planet
+biology | LUCA, the last universal common ancestor of all life
+biology | the RNA world hypothesis for the origin of life
+biology | the Miller-Urey experiment and the chemistry of early Earth
+biology | extremophiles that live in boiling acid or under kilometres of ice
+biology | the water bear's cousin, the rotifer that survived 24,000 years frozen in permafrost
+biology | the discovery that dinosaurs evolved into birds
+biology | how feathers first evolved for warmth and display rather than flight
+biology | the extinction of the dinosaurs and the Chicxulub impact
+biology | the Permian extinction, the Great Dying
+biology | the island rule, where large animals shrink and small ones grow on islands
+biology | Darwin's finches and how their beaks adapted to different foods
+biology | the peppered moth and evolution during the Industrial Revolution
+biology | how the human eye's blind spot is filled in by the brain
+biology | why humans have an appendix
+biology | how tears differ when we cry from emotion, onions or irritation
+biology | the dive reflex that slows the heart when the face meets cold water
+biology | the Bajau sea nomads and their genetically enlarged spleens for diving
+biology | how high-altitude Tibetans adapted to thin air
+biology | lactase persistence and how some humans evolved to digest milk as adults
+biology | how fireflies synchronise their flashes
+biology | the immortal cell line HeLa and the woman it came from
+biology | how prions, misfolded proteins, can spread disease without any DNA
+biology | the mystery of how eels reproduce in the Sargasso Sea
+biology | how pigeons find their way home over unfamiliar terrain
+biology | the crow's ability to recognise and remember human faces
+biology | tool use in New Caledonian crows
+biology | the elephant's mourning behaviour around its dead
+biology | how the tongue of a woodpecker wraps around its skull
+biology | the hummingbird's metabolism and nightly torpor
+biology | how spiders make silk stronger than steel by weight
+biology | ballooning spiders that float for miles on electric fields
+biology | the mystery of why and how cats purr
+biology | the sloth's slow life and the moths that live in its fur
+biology | the koala's diet of toxic eucalyptus leaves
+biology | why zebras have stripes
+biology | how chameleons change colour using nanocrystals
+biology | the vampire bat's habit of sharing blood meals with hungry roostmates
+biology | the hidden world of soil and the billions of microbes in a teaspoon of it
+biology | how earthworms shaped landscapes, as Darwin discovered
+biology | the dodo and the extinction of island species
+biology | de-extinction and the plan to bring back the woolly mammoth
+biology | gene drives and the idea of wiping out malaria mosquitoes
+biology | the hidden ecology of a single drop of seawater
+biology | phytoplankton, which produce about half of the oxygen we breathe
+biology | how the deep ocean's marine snow feeds life on the sea floor
+biology | whale fall ecosystems that thrive on a dead whale for decades
+philosophy | Plato's allegory of the cave
+philosophy | Zeno's paradox of Achilles and the tortoise
+philosophy | Zeno's arrow paradox and the nature of motion
+philosophy | the Euthyphro dilemma about whether things are good because the gods love them
+philosophy | the problem of evil and how philosophers have responded to it
+philosophy | Kant's categorical imperative
+philosophy | utilitarianism and the greatest happiness principle
+philosophy | the experience of the absurd in Camus's myth of Sisyphus
+philosophy | Sartre's claim that existence precedes essence
+philosophy | Nietzsche's idea of the eternal recurrence
+philosophy | the Stoic dichotomy of control
+philosophy | Epicurus's argument that death is nothing to us
+philosophy | Buridan's ass, the donkey that starves between two equal piles of hay
+philosophy | the brain in a vat thought experiment
+philosophy | Gettier cases and why justified true belief may not be knowledge
+philosophy | the liar paradox, "this sentence is false"
+philosophy | Russell's teapot and the burden of proof
+philosophy | Occam's razor and why simpler explanations are preferred
+philosophy | Newcomb's paradox and the predictor who knows your choice
+philosophy | the prisoner's dilemma as a puzzle about rational cooperation
+philosophy | Locke's theory of personal identity through memory
+philosophy | the bundle theory of the self in Hume and Buddhist thought
+philosophy | the Buddhist idea of anatta, or no-self
+philosophy | the Taoist concept of wu wei, effortless action
+philosophy | Confucius and the idea of ren, or humaneness
+philosophy | Aristotle's golden mean between vices
+philosophy | eudaimonia and Aristotle's idea of a flourishing life
+philosophy | the social contract in Hobbes, Locke and Rousseau
+philosophy | Hobbes's state of nature, where life is nasty, brutish and short
+philosophy | Mill's harm principle and the limits of liberty
+philosophy | the paradox of tolerance
+philosophy | moral relativism and its critics
+philosophy | the is-ought problem identified by Hume
+philosophy | the hard problem of consciousness
+philosophy | what it is like to be a bat, Nagel's famous question
+philosophy | panpsychism, the idea that consciousness is a fundamental feature of matter
+philosophy | functionalism and whether a mind could run on silicon
+philosophy | the Turing test and whether passing it would mean a machine thinks
+philosophy | Leibniz's mill and the mystery of perception
+philosophy | the swampman thought experiment
+philosophy | the Chinese philosopher Zhuangzi's dream of being a butterfly
+philosophy | solipsism and why it cannot be disproved
+philosophy | the problem of other minds
+philosophy | Pascal's idea that all of humanity's problems stem from being unable to sit quietly in a room alone
+philosophy | the lifeboat ethics dilemma
+philosophy | the repugnant conclusion in population ethics
+philosophy | effective altruism and the drowning child argument
+philosophy | the non-identity problem in ethics
+philosophy | the doctrine of double effect
+philosophy | the ethics of eating meat
+philosophy | whether animals have rights
+philosophy | the tragedy of Prometheus as a myth about knowledge and its costs
+philosophy | Heraclitus and the claim that you cannot step into the same river twice
+philosophy | Parmenides and the claim that change is impossible
+philosophy | Diogenes the Cynic and his life in a barrel
+philosophy | Socrates's claim that the unexamined life is not worth living
+philosophy | Socratic irony and the method of questioning
+philosophy | the Cartesian claim "I think, therefore I am"
+philosophy | Berkeley's idealism and the tree that falls with no one to hear it
+philosophy | Wittgenstein's beetle in a box
+philosophy | Wittgenstein's idea that the meaning of a word is its use
+philosophy | the problem of universals: does redness exist apart from red things
+philosophy | the sea battle problem of future contingents
+philosophy | fatalism and the Stoic image of the dog tied to a cart
+philosophy | Laplace's demon, an intellect that could predict the whole future
+philosophy | the question of why there is something rather than nothing
+philosophy | the cosmological argument for a first cause
+philosophy | the fine-tuning argument and the anthropic principle
+philosophy | the meaning of a life in the face of cosmic indifference
+philosophy | Simone de Beauvoir's idea that one is not born but becomes a woman
+philosophy | Hannah Arendt's banality of evil
+philosophy | Kierkegaard's leap of faith
+philosophy | Schopenhauer's view of life as a pendulum between pain and boredom
+philosophy | the aesthetics of wabi-sabi and the beauty of imperfection
+philosophy | Kant's distinction between the beautiful and the sublime
+philosophy | the ethics of lying and Kant's murderer at the door
+philosophy | the value of privacy in a world of surveillance
+philosophy | moral status and whether an AI could ever deserve rights
+philosophy | the philosophy of boredom
+philosophy | the paradox of hedonism, that happiness eludes those who chase it
+philosophy | the veil of Maya in Hindu philosophy
+creative prose | an old clockmaker repairing the last clock in a town where time has stopped
+creative prose | a girl who finds a door in her grandmother's attic that opens onto the sea
+creative prose | the final evening at a small-town cinema before it closes forever
+creative prose | an astronaut watching Earth rise from the surface of the Moon
+creative prose | a fisherman who catches a bottle with a letter addressed to him
+creative prose | a market in Marrakech at dawn, before the crowds arrive
+creative prose | a thunderstorm rolling over a wheat field in late summer
+creative prose | an abandoned amusement park reclaimed by vines
+creative prose | a violinist playing alone in a subway station at midnight
+creative prose | the first morning of spring in a mountain village
+creative prose | a robot gardener tending roses in a city long empty of people
+creative prose | a letter from a soldier to his younger self
+creative prose | a library where every book is about the life of someone who never existed
+creative prose | the sound of rain on a tin roof during a childhood summer
+creative prose | a ferry crossing in thick fog
+creative prose | a baker who bakes bread for the dead on the Day of the Dead
+creative prose | an elderly couple dancing in their kitchen to an old record
+creative prose | a desert at night under a sky crowded with stars
+creative prose | a map-maker charting an island that keeps changing shape
+creative prose | the smell of an old bookshop on a winter afternoon
+creative prose | a train station where the trains arrive from the past
+creative prose | a beekeeper telling the bees that their keeper has died
+creative prose | a ghost who keeps setting the table for a family that moved away
+creative prose | the last tree on a terraformed planet
+creative prose | a child's first sight of the ocean
+creative prose | an orchestra tuning up in the minutes before a concert
+creative prose | a monastery bell ringing over a valley at dusk
+creative prose | a night shift nurse on a quiet hospital ward
+creative prose | a glassblower shaping a vase from molten glass
+creative prose | a city of lanterns floating on a river during a festival
+creative prose | the moment a long drought finally breaks
+creative prose | a stranded whale and the villagers who try to save it
+creative prose | an old woman feeding pigeons in a square that has changed around her
+creative prose | a deep-space probe drifting beyond the edge of the solar system, still listening for home
+creative prose | a chess game between two old friends that has lasted forty years
+creative prose | a fox crossing a frozen lake at first light
+creative prose | a tailor sewing a wedding dress for his daughter
+creative prose | autumn leaves falling in a park in Kyoto
+creative prose | a mapmaker's apprentice who discovers a hidden valley on an old chart
+creative prose | the hour before dawn in a fishing harbour
+creative prose | a woman who collects the sounds of disappearing places
+creative prose | a fire lookout alone in a tower above an endless forest
+creative prose | a magician performing his final trick
+creative prose | a garden that blooms only at night
+creative prose | an Antarctic research station during the months of darkness
+creative prose | the sea breaking against a lighthouse in a winter gale
+creative prose | a translator who realises the poem she is translating describes her own life
+creative prose | a carousel horse that remembers every child who rode it
+creative prose | a heatwave in a crowded city
+creative prose | a ballet dancer's last performance
+creative prose | a time traveller who can only move one minute into the future
+creative prose | an AI that writes a letter to the engineer who built it
+creative prose | a coastal village swallowed slowly by the rising sea
+creative prose | the memory of a grandmother's kitchen
+creative prose | a pianist playing on a piano washed up on a beach
+creative prose | a lone climber at the summit of a Himalayan peak
+creative prose | a sailor who keeps a journal of the colours of the sea
+creative prose | a hot air balloon drifting over the fairy chimneys of Cappadocia
+creative prose | an island where everyone speaks in whispers
+creative prose | the final message sent from a sinking ship
+mathematics | the two envelopes paradox
+mathematics | the Königsberg bridge problem and the birth of graph theory
+mathematics | Euler's identity and why it is called the most beautiful equation
+mathematics | why there are infinitely many prime numbers
+mathematics | the Riemann hypothesis and the distribution of primes
+mathematics | the twin prime conjecture
+mathematics | Goldbach's conjecture that every even number is the sum of two primes
+mathematics | Fermat's Last Theorem and Andrew Wiles's proof
+mathematics | the Poincaré conjecture and Grigori Perelman's refusal of the Fields Medal
+mathematics | Cantor's diagonal argument and why some infinities are bigger than others
+mathematics | the continuum hypothesis
+mathematics | the infinite series that explains why 1/2 + 1/4 + 1/8 + ... equals 1
+mathematics | why 0.999... repeating equals exactly 1
+mathematics | the number pi and why its digits never repeat
+mathematics | the number e and the mathematics of compound interest
+mathematics | the Fibonacci sequence and its appearance in sunflower seeds
+mathematics | the Möbius strip, a surface with only one side
+mathematics | the Klein bottle, a bottle with no inside
+mathematics | the hairy ball theorem and why there is always a place on Earth with no wind
+mathematics | the Borsuk-Ulam theorem and the two antipodal points with the same temperature
+mathematics | the pigeonhole principle and its surprising consequences
+mathematics | the law of large numbers and why casinos always win
+mathematics | the gambler's fallacy
+mathematics | the central limit theorem and the ubiquity of the bell curve
+mathematics | Simpson's paradox, where a trend reverses when data are combined
+mathematics | Bayes' theorem and how to update beliefs with evidence
+mathematics | the base rate fallacy in medical testing
+mathematics | the secretary problem and when to stop searching for the best option
+mathematics | the travelling salesman problem
+mathematics | the knapsack problem and the art of packing
+mathematics | the Tower of Hanoi puzzle and the legend of the end of the world
+mathematics | the Sierpinski triangle and self-similar shapes
+mathematics | the Koch snowflake, a shape with infinite perimeter but finite area
+mathematics | Gabriel's horn, which you could fill with paint but never paint
+mathematics | chaos theory and the logistic map
+mathematics | the Lorenz attractor and the shape of chaos
+mathematics | game theory and the game of chicken
+mathematics | Arrow's impossibility theorem and the flaws of voting systems
+mathematics | the Condorcet paradox in elections
+mathematics | the mathematics of fair cake-cutting
+mathematics | the stable marriage problem and how medical residents are matched to hospitals
+mathematics | the four-dimensional tesseract
+mathematics | non-Euclidean geometry and the parallel postulate
+mathematics | the invention of zero in ancient India
+mathematics | the Babylonian base-60 system that gives us 60 minutes in an hour
+mathematics | the Pythagorean theorem and its hundreds of proofs
+mathematics | the discovery of irrational numbers and the legend of Hippasus
+mathematics | Ramanujan and the taxicab number 1729
+mathematics | the 15 puzzle craze and the impossible configuration
+mathematics | knot theory and how mathematicians classify knots
+mathematics | the Rubik's cube and God's number, the most moves ever needed to solve it
+mathematics | random walks and why a drunk man will find his way home but a drunk bird may not
+mathematics | Buffon's needle and estimating pi by dropping needles
+mathematics | the Banach fixed-point theorem illustrated by a crumpled map
+history | the eruption of Vesuvius and the burial of Pompeii in 79 AD
+history | the building of the Great Pyramid of Giza
+history | the Terracotta Army of China's first emperor
+history | the fall of Constantinople in 1453
+history | the Black Death and how it reshaped medieval Europe
+history | the Year Without a Summer in 1816
+history | the eruption of Krakatoa in 1883 and the sound heard thousands of miles away
+history | the voyage of Magellan's fleet around the world
+history | Zheng He's treasure fleets and their voyages across the Indian Ocean
+history | the Mongol Empire's postal relay system, the Yam
+history | the building of the Panama Canal
+history | the Great Stink of London in 1858 and the sewers that followed
+history | John Snow's map of cholera deaths and the Broad Street pump
+history | the Tulip Mania of seventeenth-century Holland
+history | the South Sea Bubble of 1720
+history | the Christmas truce of 1914
+history | Shackleton's Endurance expedition and its survival against the odds
+history | the Apollo 13 mission and how its crew made it home
+history | the race to the South Pole between Amundsen and Scott
+history | the Rapa Nui people and the moai of Easter Island
+history | the Nazca lines in the Peruvian desert
+history | Machu Picchu and its rediscovery in 1911
+history | Angkor Wat and the hydraulic city around it
+history | the lost city of Petra carved into rose-red cliffs
+history | Stonehenge and the theories about its purpose
+history | the Library of Ashurbanipal and its clay tablets
+history | the Code of Hammurabi
+history | the invention of writing in ancient Sumer
+history | the Phoenician alphabet that most modern alphabets descend from
+history | the Mali Empire and the wealth of Mansa Musa
+history | the city of Timbuktu as a centre of learning
+history | Great Zimbabwe and its stone walls built without mortar
+history | the Viking settlement of Greenland and why it vanished
+history | the Norse discovery of North America at L'Anse aux Meadows
+history | the Siege of Leningrad
+history | the Radium Girls and the fight for workplace safety
+history | the invention of the telegraph and the first transatlantic cable
+history | the mystery of the Mary Celeste ghost ship
+history | the Lindow Man and the bog bodies of northern Europe
+history | the Lost Colony of Roanoke
+history | the Dreyfus affair
+history | the Cuban Missile Crisis and the thirteen days that nearly ended the world
+history | the night Stanislav Petrov decided a nuclear alarm was false
+history | the fall of the Berlin Wall in 1989
+history | the Codex Gigas, also called the Devil's Bible
+computer science | how the internet routes a message through many networks
+computer science | TCP/IP and how data is broken into packets
+computer science | how the domain name system works like a phone book
+computer science | how a hash function works and why it is hard to reverse
+computer science | blockchains and how they keep a shared ledger without a central authority
+computer science | the Byzantine generals problem
+computer science | how a compiler turns source code into machine instructions
+computer science | recursion, explained with Russian nesting dolls
+computer science | Big O notation and why some algorithms scale badly
+computer science | how binary search finds a word in a dictionary
+computer science | sorting algorithms, from bubble sort to quicksort
+computer science | Dijkstra's algorithm for finding the shortest path
+computer science | how a neural network learns by backpropagation
+computer science | gradient descent explained as walking downhill in fog
+computer science | overfitting in machine learning
+computer science | the Y2K bug and the effort to fix it
+computer science | the Therac-25 radiation machine accidents and software safety
+computer science | the Morris worm, one of the first internet worms
+computer science | the Enigma machine and how Bletchley Park broke it
+computer science | Ada Lovelace and the first published computer program
+computer science | Alan Turing's universal machine
+computer science | the von Neumann architecture that underlies most computers
+computer science | how a transistor acts as a tiny switch
+computer science | Moore's law and its slowing pace
+computer science | how computer memory caching works
+computer science | how a garbage collector frees unused memory
+computer science | deadlock, explained with the dining philosophers problem
+computer science | how compression algorithms shrink files
+computer science | how JPEG compression throws away information we will not miss
+computer science | the CAP theorem in distributed systems
+computer science | how a search engine builds an index of the web
+computer science | the Unix philosophy of small tools that do one thing well
+computer science | the first computer bug, a moth found in the Harvard Mark II
+computer science | how two-factor authentication protects accounts
+computer science | how Shamir's secret sharing scheme splits a secret into pieces
+computer science | the Diffie-Hellman key exchange explained with mixing paint
+computer science | how a captcha tells humans and bots apart
+computer science | the attention mechanism in transformer language models
+computer science | the game of Nim and the hidden binary arithmetic of its winning strategy
+computer science | Wikipedia and how a crowd of volunteers built an encyclopedia
+psychology | the Stroop effect, where naming the ink colour of a word is surprisingly hard
+psychology | the Baader-Meinhof phenomenon, why a new word suddenly seems to be everywhere
+psychology | confirmation bias
+psychology | the anchoring effect in decision-making
+psychology | loss aversion and why losing feels worse than winning
+psychology | the sunk cost fallacy
+psychology | the IKEA effect, valuing things more because we built them
+psychology | the marshmallow test of delayed gratification
+psychology | the Stanford prison experiment and its controversies
+psychology | the Milgram obedience experiments
+psychology | the Asch conformity experiments with lines of different lengths
+psychology | the halo effect
+psychology | learned helplessness
+psychology | flow, the state of complete absorption in a task
+psychology | the paradox of choice
+psychology | change blindness and the invisible gorilla experiment
+psychology | false memories and how easily they can be implanted
+psychology | the serial position effect in memory
+psychology | the Zeigarnik effect, why unfinished tasks linger in the mind
+psychology | the mere-exposure effect
+psychology | impostor syndrome
+psychology | the nocebo effect, where expecting harm causes harm
+psychology | the peak-end rule and how we remember experiences
+psychology | the Pygmalion effect, where expectations shape performance
+psychology | the fundamental attribution error
+economics | the invisible hand in Adam Smith's economics
+economics | comparative advantage and why trade benefits both sides
+economics | inflation and why money loses value over time
+economics | hyperinflation in Weimar Germany
+economics | the paradox of thrift
+economics | Goodhart's law, when a measure becomes a target
+economics | Gresham's law, bad money drives out good
+economics | the broken window fallacy
+economics | moral hazard and the bailouts of 2008
+economics | the diamond-water paradox of value
+economics | supply and demand in the market for concert tickets
+economics | the Giffen good, which people buy more of when its price rises
+economics | the free rider problem and public goods
+economics | the Matthew effect, where advantage begets advantage
+economics | the economics of attention in the digital age
+economics | the Veblen good and conspicuous consumption
+economics | the multiplier effect of government spending
+economics | the Laffer curve and the debate over tax rates
+economics | the economics of happiness and the Easterlin paradox
+economics | the Dutch disease, where a resource boom harms other industries
+other | the origin of the word "salary" and the Roman salt trade
+other | how languages change over time, from Old English to modern English
+other | the Sapir-Whorf hypothesis that language shapes thought
+other | Esperanto and the dream of a universal language
+other | the invention of paper in Han China
+other | the history of the colour purple and Tyrian dye
+other | the golden age of Islamic science in Baghdad's House of Wisdom
+other | the science of why music gives us chills
+other | the origins of chess in India and Persia
+other | the history of the calendar and why February has 28 days
+other | the cultural history of tea from China to Britain
+other | the origins of the Olympic Games in ancient Greece
+other | the art of Japanese kintsugi, repairing broken pottery with gold
+other | the science and history of fermentation
+other | why the Mona Lisa became the most famous painting in the world

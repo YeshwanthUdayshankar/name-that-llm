@@ -55,7 +55,9 @@ def main():
     t0 = time.time()
     for s in range(0, len(df), args.bs):
         ix = order[s:s + args.bs]
-        enc = tok([df.text.iloc[i] for i in ix], return_tensors="pt", padding=True).to("cuda")
+        # truncate: official passages are <= 351 tokens, but some external texts run to thousands
+        enc = tok([df.text.iloc[i] for i in ix], return_tensors="pt", padding=True, truncation=True,
+                  max_length=512).to("cuda")
         out = model(**enc, output_hidden_states=True)
         mask = enc.attention_mask.unsqueeze(-1).float()
         hs = torch.stack(out.hidden_states, 1).float()  # [B, L+1, T, D]

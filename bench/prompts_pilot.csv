@@ -1,0 +1,31 @@
+prompt_id,domain,task_type,prompt,target_words
+g001,physics,explain,"Explain the Mpemba effect, the claim that hot water can sometimes freeze faster than cold water, and why physicists still argue about whether it is real.",62
+g002,physics,explain,"Using an everyday analogy, explain how a laser produces light in which every wave marches in step, through stimulated emission and population inversion.",53
+g003,physics,describe,"Describe, vividly and for a general audience, how a tokamak confines a plasma hotter than the core of the Sun using twisted magnetic fields.",146
+g004,physics,explain,"Explain why the sky glows red and orange at sunset, tracing how Rayleigh scattering changes as sunlight crosses more of the atmosphere.",121
+g005,physics,explain,"Explain the Casimir effect, in which two uncharged metal plates in a vacuum are pushed together, and what it suggests about empty space.",40
+g006,physics,explain,"Explain how a sonic boom forms when an aircraft breaks the sound barrier, and why the boom follows the plane rather than happening once.",43
+g007,biology,explain,"Explain how the arctic tern migrates from pole to pole every year, seeing more daylight than any other animal, and how it navigates.",50
+g008,biology,describe,Describe in a whimsical tone how a cuckoo chick tricks its foster parents into feeding it while it pushes their own eggs out of the nest.,161
+g009,biology,explain,"Explain how the immortal jellyfish Turritopsis dohrnii can revert to an earlier stage of its life cycle, and what that does and does not mean for ageing.",50
+g010,biology,explain,"Explain quorum sensing, the way bacteria count their own numbers with chemical signals and switch on behaviours like glowing only when crowded.",137
+g011,biology,describe,"Write a haunting description of the deep-sea anglerfish, its glowing lure and the strange way males fuse permanently to females.",53
+g012,philosophy,argue,"Make the case, in a reflective tone, that Pascal's wager fails once you notice how many possible gods there could be.",62
+g013,philosophy,explain,"Explain the problem of moral luck, using the example of two equally careless drivers where only one happens to hit a child.",59
+g014,philosophy,explain,"Explain the sorites paradox, asking how many grains of sand you can remove before a heap stops being a heap, and what it says about vague words.",61
+g015,philosophy,explain,Explain Nick Bostrom's paperclip maximizer thought experiment and the worry about AI goals that it is meant to illustrate.,40
+g016,creative prose,story,"Write a short, lyrical story about a lighthouse keeper who discovers that the light has been signalling to something out at sea.",42
+g017,creative prose,describe,"Write a poetic description of a city during the first heavy snowfall of the year, seen from the window of a night train.",124
+g018,creative prose,story,Write a melancholy vignette about the last speaker of a language recording a lullaby for a linguist.,187
+g019,mathematics,explain,"Explain Benford's law, the surprising fact that in many real-world datasets the leading digit 1 appears about 30% of the time, and how auditors use it to spot fraud.",104
+g020,mathematics,explain,"Explain the four colour theorem, which says any map needs at most four colours so neighbours differ, and why its 1976 computer-assisted proof was controversial.",49
+g021,mathematics,explain,"Explain the birthday paradox, showing why only 23 people are needed for a better-than-even chance that two share a birthday.",175
+g022,history,describe,"Describe the Great Molasses Flood of 1919 in Boston, when a storage tank burst and a wave of syrup swept through the streets.",90
+g023,history,describe,"Describe the Tunguska event of 1908, when an explosion flattened 80 million trees across the Siberian forest without leaving a crater.",124
+g024,history,describe,"Describe the Dancing Plague of 1518 in Strasbourg, when hundreds of people danced for days, and the theories offered to explain it.",70
+g025,computer science,explain,Explain public-key cryptography using the analogy of a padlock that anyone can close but only one person can open.,105
+g026,computer science,explain,"Explain how a Bloom filter can tell you that an item is definitely not in a set, or only probably in it, while using very little memory.",55
+g027,psychology,explain,Explain the Dunning-Kruger effect and why people with the least skill in an area are often the most confident about it.,122
+g028,psychology,explain,"Explain the spotlight effect, our tendency to overestimate how much other people notice our appearance and mistakes.",76
+g029,economics,explain,"Explain the lipstick effect, the idea that consumers keep buying small luxuries during recessions, and why economists debate whether it is real.",99
+g030,economics,explain,"Explain the cobra effect, named after a colonial bounty on snakes in Delhi, as an example of incentives that backfire.",82
