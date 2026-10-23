@@ -127,7 +127,7 @@ def main():
     log(f"collect rc={rc}\n    {out}")
     g = pd.read_csv(ROOT / "external/own_gen.csv")
     got = g[g.prompt_id.str.startswith(f"d{day:02d}_")].model.value_counts()
-    missing = {m: len(rows) - got.get(m, 0) for m in sorted(set(g.model)) if got.get(m, 0) < len(rows)}
+    missing = {m: int(len(rows) - got.get(m, 0)) for m in sorted(set(g.model)) if got.get(m, 0) < len(rows)}
     log(f"day {day} passages: {int(got.sum())}/{len(rows) * 12}; short models: {missing or 'none'}; "
         f"total own passages: {len(g)}")
     # transfer only (one TF-IDF fit), memory-capped so it cannot take down the desktop
