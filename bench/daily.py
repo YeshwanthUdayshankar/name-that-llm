@@ -82,6 +82,9 @@ def wait_ready(limit_s=3600):
 
 def main():
     OUT.mkdir(exist_ok=True)
+    # cron has no session env; systemd-run --user needs it to reach the user manager
+    os.environ.setdefault("XDG_RUNTIME_DIR", f"/run/user/{os.getuid()}")
+    os.environ.setdefault("DBUS_SESSION_BUS_ADDRESS", f"unix:path=/run/user/{os.getuid()}/bus")
     lock = open(OUT / "daily.lock", "w")
     try:
         fcntl.flock(lock, fcntl.LOCK_EX | fcntl.LOCK_NB)
