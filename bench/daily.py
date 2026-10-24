@@ -91,6 +91,10 @@ def main():
     today = f"{datetime.now(timezone.utc):%Y-%m-%d}"
     if "--force" not in sys.argv and any(d["date"] == today for d in state["days"].values()):
         return
+    # the free quota is a rolling ~24 h window: starting earlier gets part of a day refused (counted as done)
+    ended = [datetime.fromisoformat(d["ended"]) for d in state["days"].values() if "ended" in d]
+    if "--force" not in sys.argv and ended and (datetime.now(timezone.utc) - max(ended)).total_seconds() < 24.25 * 3600:
+        return
     bank = pd.read_csv(B / "prompts_bank.csv")
     day = max(map(int, state["days"]), default=0) + 1
     rows = bank[bank.day == day]
@@ -139,7 +143,8 @@ def main():
     rc, out = sh(["systemd-run", "--user", "--scope", "-q", "-p", "MemoryMax=12G", "-p", "MemorySwapMax=0",
                   PY, "-I", str(ROOT / "src/ext_check2.py"), "own", "--transfer-only"], 3600)
     log(f"transfer check rc={rc}\n    {out}")
-    state["days"][str(day)].update(status="done", passages=int(got.sum()), missing=missing)
+    state["days"][str(day)].update(status="done", passages=int(got.sum()), missing=missing,
+                                   ended=datetime.now(timezone.utc).isoformat(timespec="seconds"))
     STATE.write_text(json.dumps(state, indent=1))
 
 
