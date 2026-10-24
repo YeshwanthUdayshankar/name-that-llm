@@ -1,4 +1,4 @@
-# 7. Strategy (as of 2026-10-23)
+# 7. Strategy (as of 2026-10-23; reviewed 2026-10-24, verdict weakened: see [10-strategy-review](10-strategy-review-2026-10-24.md) for the current plan)
 
 ## Where we stand
 - **Public LB 0.624**, rank 102 of 2,784. The anchor is our private fork of the public 0.624 notebook

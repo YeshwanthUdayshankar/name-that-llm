@@ -17,3 +17,4 @@ papers or pages we used. Read them in order the first time.
 | 8 | [Lessons learned](08-lessons-learned.md) | the short list of things we'd tell ourselves on day one |
 
 Live state: [README.md](../README.md) (results table) and the scripts in `src/` and `kaggle/`.
+- [10. Strategy review 2026-10-24](10-strategy-review-2026-10-24.md): frontier moved to 0.636–0.639; re-anchor plan, claim ledger, critique
