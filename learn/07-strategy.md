@@ -41,3 +41,15 @@
   Keep a no-pool fallback in mind.
 - **The 6 labels the proxy can't reach** (fable-5, gemini-3.7-flash, qwen3.8-max, glm-5.3, glm-5.3-flash, kimi-k3)
   would need OpenRouter, at about $1.4 per 100 passages per model. That needs an explicit go-ahead.
+
+## Status at end of 2026-10-23 (resume here)
+- **Cron is installed** (`17 * * * *`, `bench/daily.py`, log at `bench/out/cron.log`).
+  - Day 1 produced 811 passages, bringing our own data to 1,171. Transfer score 0.380, chance 0.083.
+  - Day 2 was refused at 00:05 UTC: the free quota is a rolling ~24 h window, not a UTC-midnight reset. The script now
+    retries hourly, so day 2 should run around 17:17 UTC (1:17 PM ET) on 10-24.
+- **Next:** at about 3k own passages (day 3), test pool + own data against the pool alone with the SVC (paired bootstrap).
+- **Closed today, all negative:**
+  - pool source/setting filtering
+  - host-likeness weighting
+  - gemini-3.7 relabelling
+  - surface features for the hard pairs
