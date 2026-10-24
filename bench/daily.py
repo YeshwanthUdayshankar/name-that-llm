@@ -1,6 +1,6 @@
 """Daily free generation run on the Kaggle Benchmarks Model Proxy (about $10/day free quota).
 
-Once per UTC day: take the next day of prompts from prompts_bank.csv, push them as task ntl-gen-daily, run the
+Once per UTC day (retried hourly until the free quota lets calls through): take the next day of prompts from prompts_bank.csv, push them as task ntl-gen-daily, run the
 12 proxy models in small batches (all at once trips 403 quota reservations), download, collect every run so far
 into external/own_gen.csv, and run the transfer check. Safe to call hourly from cron: it exits if today's day
 has already started, and a lock stops overlapping runs. State and logs live in bench/out/ (git-ignored).
@@ -130,6 +130,11 @@ def main():
     missing = {m: int(len(rows) - got.get(m, 0)) for m in sorted(set(g.model)) if got.get(m, 0) < len(rows)}
     log(f"day {day} passages: {int(got.sum())}/{len(rows) * 12}; short models: {missing or 'none'}; "
         f"total own passages: {len(g)}")
+    if not got.sum():  # every call refused: the free quota is a rolling window, not a UTC-midnight reset
+        del state["days"][str(day)]
+        STATE.write_text(json.dumps(state, indent=1))
+        log(f"day {day}: no passages (quota not free yet?); will retry next hour")
+        return
     # transfer only (one TF-IDF fit), memory-capped so it cannot take down the desktop
     rc, out = sh(["systemd-run", "--user", "--scope", "-q", "-p", "MemoryMax=12G", "-p", "MemorySwapMax=0",
                   PY, "-I", str(ROOT / "src/ext_check2.py"), "own", "--transfer-only"], 3600)
